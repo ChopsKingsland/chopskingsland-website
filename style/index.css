@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0vh;
+    margin: 0vh;
+    background-color: transparent;
+}
+
+.menu_text {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    color: #edf0f1;
+    cursor: pointer;
+    font-size: 3vh;
+}
+
+li, a, button {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 1.6vh;
+    color: #edf0f1;
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 10%;
+    background-color: #24252A;
+    animation: fadeInFirst 0.3s;
+    -webkit-animation: fadeInFirst 0.3s;
+}
+
+.nav__links {
+    list-style: none;
+    
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0vh 2vh;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #0088a9
+}
+
+.cta {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.typewriter-h1 {
+    background-color: rgba(0, 216, 214, 0.6);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0%;
+    font-family: 'Inconsolata', monospace;
+    color: #000000;
+    border-right: 0.3vh solid transparent;
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: letter-by-letter 3.5s steps(15), character-indicator .2s 18 reverse;
+    -webkit-animation: letter-by-letter 3.5s steps(15), character-indicator .2s 18 reverse;
+    font-size: 5vh;
+}
+
+.typewriter-h2 {
+    background-color: rgba(255, 230, 2, 0.6);
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0%;
+    font-family: 'Inconsolata', monospace;
+    color: #000000;
+    border-right: 0.3vh solid transparent;
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: letter-by-letter2 7s steps(20), character-indicator .2s 18 reverse 3.5s;
+    -webkit-animation: letter-by-letter2 7s steps(20), character-indicator .2s 18 reverse 3.5s;
+    font-size: 3vh;
+}
+
+
+.bg-image {
+    /* object-fit: cover; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    animation: fadeInFirst 0.5s;
+    -webkit-animation: fadeInFirst 0.5s;
+}
+
+.main_content {
+    position:fixed;
+    top:0%;
+    right:0%;
+    bottom:0%;
+    left:0%;
+    z-index: -1;
+    /* background-color: #24252A; */
+    background-image: url(/images/main-page-bg-centred.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* #text {
+    top: 50%
+}
+
+.text {
+    top: 50%;
+} */
+
+.buttons {
+    text-align: middle;
+    display:flex;
+    justify-content: center;
+    padding-top: 50vh;
+}
+
+.btn {
+    background-color: rgba(0,0,0,0.3);
+    border: 0.2vh solid white;
+    cursor: pointer;
+    width: 10vh;
+    height: 4vh;
+    /* position: absolute; */
+    top: 70%;
+    margin:2vh;
+    display:block;
+    transition: ease background-color 0.5s;
+    animation: fadeInButtons 8s;
+    -webkit-animation: fadeInButtons 8s;
+    font-size: 1.7vh;
+}
+
+.btn:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Animations */
+@keyframes letter-by-letter {
+    0%{
+        width:0;
+    }
+}
+
+@keyframes letter-by-letter2 {
+    0%{
+        width:0;
+        background-color: transparent;
+    }
+    55%{
+        width:0;
+        background-color: transparent;
+    }
+    56%{
+        background-color: rgba(255, 230, 2, 0.6);
+    }
+}
+
+@keyframes character-indicator {
+    0%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: black;
+    }
+    100%{
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeInButtons {
+    0% {
+        opacity: 0%;
+    }
+    93% {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadeInFirst {
+    0% {
+        opacity: 0%;
+    }
+}
+
+@-webkit-keyframes fadeInButtons {
+    0% {
+        -webkit-opacity: 0%;
+    }
+    93% {
+        -webkit-opacity: 0%;
+    }
+}
+
+@-webkit-keyframes fadeInFirst {
+    0% {
+        -webkit-opacity: 0%;
+    }
+}

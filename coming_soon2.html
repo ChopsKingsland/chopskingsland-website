@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Coming Soon</title>
+	<link rel="stylesheet" href="/style/coming_soon2.css">
+</head>
+<body>
+	<div class="container">
+		<ul id="scene">
+			<li class="layer" data-depth=".1"><img class="imgFit" src="/parallax/png/2.png"></li>
+			<li class="layer" data-depth="1"><img class="imgFit" src="/parallax/png/3.png"></li>
+			<li class="layer" data-depth="-1"><img class="imgFit" src="/parallax/png/4.png"></li>
+			<li class="layer" data-depth="2"><img class="imgFit" src="/parallax/png/5.png"></li>
+			<li class="layer" data-depth="0.5"><img class="imgFit" src="/parallax/png/6.png"></li>
+		</ul>
+    </div>
+    <script src="/js/parallax.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+</html>
